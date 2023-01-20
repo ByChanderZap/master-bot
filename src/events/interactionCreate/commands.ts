@@ -1,10 +1,10 @@
-import commands from "../commands"
-import { Command } from "../types"
+import commands from "../../commands"
+import { Command } from '../../types'
 import {
   EditReply,
   event,
   Reply
-} from '../utils'
+} from '../../utils'
 
 const allCommands = commands.map(({ commands }) => commands).flat()
 const allCommandsMap = new Map<string, Command>(
